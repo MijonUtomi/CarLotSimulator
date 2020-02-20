@@ -26,6 +26,8 @@ namespace CarLotSimulator
             green.MakeEngineNoise(green.EngineNoise);
             green.MakeHonkNoise(green.HonkNoise);
 
+            Console.WriteLine( carlot.numberOfCars);
+
             Car black = new Car();
 
             black.Year = 2019;
@@ -41,6 +43,8 @@ namespace CarLotSimulator
             black.MakeHonkNoise(black.HonkNoise);
 
 
+            Console.WriteLine(carlot.numberOfCars);
+
             Car burgundy = new Car();
             burgundy.Make = "bugatti";
             burgundy.Model = "spinner";
@@ -53,6 +57,8 @@ namespace CarLotSimulator
             burgundy.MakeEngineNoise(burgundy.EngineNoise);
           burgundy.MakeHonkNoise(burgundy.HonkNoise);
 
+
+            Console.WriteLine(carlot.numberOfCars);
 
             Console.ReadLine();
             //Now that the Car class is created we can instanciate 3 new cars
@@ -80,5 +86,6 @@ namespace CarLotSimulator
         {
             throw new NotImplementedException();
         }
+
     }
 }
